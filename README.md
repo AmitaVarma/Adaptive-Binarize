@@ -4,7 +4,7 @@ Adaptive binarize using Bradley's algorithm from Bradley, D., G. Roth, "Adapting
 
 Use adaptive_threshold(image,s,t).
 
-Image must be in greyscale (0-1, not 0-255).
+Image must be a 2 dimensional array.
 
 s and t are optional parameters.
 
