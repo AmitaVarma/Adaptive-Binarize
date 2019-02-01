@@ -1,5 +1,5 @@
 using Images
-function adaptive_threshold(img::Array{Gray{Normed{UInt8,8}},2},s::Int=Int(2*floor(size(img)[1]/16 + 1)),t::Int=15)
+function adaptive_threshold(img::Array,s::Integer=Int(2*floor(size(img)[1]/16 + 1)),t::Integer=15)
     if s%2!=0 || s<=0 
         error("Window size must be an even positive non-zero integer")
     end
